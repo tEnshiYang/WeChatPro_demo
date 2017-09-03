@@ -1,0 +1,12 @@
+<view class="sele">
+<!--留言输入区域  -->
+<input value="{{inputVal}}" bindinput="inp" type="text" placeholder="请输入" />
+    <button bindtap="add">提交</button>
+  <view style="overflow:hidden;" data-index="{{index}}" class="classname" wx:for="{{msgData}}" wx:key="{{index}}">
+  <!--留言显示区域  -->
+    <text>{{item.msg}}</text>
+    <icon style="float:right;" type="cancel" bindtap="del" />
+    
+  </view>
+
+</view>

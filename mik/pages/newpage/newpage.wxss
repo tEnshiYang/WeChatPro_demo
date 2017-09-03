@@ -1,0 +1,54 @@
+.container{
+  width: 100%;
+   margin-top: 10rpx;
+  height: 100%;
+  background-color: blueviolet;
+  color: white;
+}
+
+.textinfo{
+  font-size: 28px;
+}
+
+.na{
+ display: flex;
+ 
+  padding: 0 50rpx;
+ justify-content: space-between;
+   background-color: blueviolet;
+ 
+}
+
+.na_item{
+  width: 100rpx;
+  line-height: 80rpx;
+  text-align: center;
+ 
+
+}
+.selena{
+  background: red;
+}
+
+.newsPic{
+  display: flex;
+  margin-top: 20rpx;
+  font-family: "微软雅黑";
+  font-size: 29rpx;
+}
+
+
+.newslist{
+  display: flex;
+  margin: 20rpx;
+  justify-content: space-between;
+}
+
+.title_subject{
+  font-size: 38rpx;
+  font-weight: 800;
+}
+
+.title{
+  font-size: 30rpx;
+}

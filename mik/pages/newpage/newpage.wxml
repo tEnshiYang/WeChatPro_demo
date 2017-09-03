@@ -1,0 +1,54 @@
+<!-- newpage.wxml-->
+<view class="cont">
+<!-- 导航 -->
+<view class="na">
+    <view hover-class="selena" hover-stay-time="600" class="na_item" wx:for="{{arr}}" wx:for-index="idx">{{item}}</view>
+</view>
+<!--banner  -->
+<view class="banner">
+  <swiper indicator-dots="true" interval="5000" autoplay="true" circular="true" indicator-active-color="red">
+    <!--循环绑定数据舒勇<block>标签  -->
+    <block wx:for="{{bannerUrl}}">
+    <swiper-item>
+      <image  src="{{item}}" style="width:100%;height:100%;"></image>
+    </swiper-item>
+    </block>
+  </swiper>
+</view>
+<!--滚动条  -->
+
+<scroll-view scroll-x="true" style="width=100%;height:110rpx;" bindscroll="scr">
+ 
+  <view class="newsPic">
+  <block wx:for="{{news}}">
+    <view class="news">
+    <view class="picList">
+      <image style="width:100px;height:90rpx;" src="{{item.imgurl}}"></image>
+    </view>
+     <view class="newsTitle">
+    {{item.title}}
+    </view>
+    </view>
+     </block>
+</view>
+ 
+</scroll-view>
+
+<!--list    -->
+<view class="newInfo">
+  <block wx:for="{{newslist}}">
+  <view class="newslist">
+  <view class="Pic" >
+    <image style="width:280rpx;height:200rpx;padding:20rpx;" src="{{item.imgurl}}"></image>
+  </view>
+  <view class="news_title">
+    <text class="title_subject">{{item.title_1}}\n</text>
+     <text class="title">{{item.title_2}}</text>
+     
+  </view>
+  </view>
+   </block>
+</view>
+</view>
+
+
